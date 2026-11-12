@@ -1,0 +1,10 @@
+{"key":"shop-a","ts":1000,"value":10}
+{"key":"shop-a","ts":1500,"value":20}
+{"key":"shop-b","ts":1200,"value":5}
+{"key":"shop-a","ts":3100,"value":7}
+{"key":"shop-b","ts":2800,"value":3}
+{"key":"shop-a","ts":900,"value":1}
+{"key":"shop-b","ts":4100,"value":9}
+{"key":"shop-a","ts":4500,"value":11}
+{"key":"shop-b","ts":5200,"value":2}
+{"key":"shop-a","ts":3900,"value":4}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event-Time Window Lab</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Event-Time Window Lab</h1>
+    <p id="status">booting</p>
+  </header>
+  <main>
+    <section class="viz-pane">
+      <canvas id="viz" width="720" height="420"></canvas>
+      <pre id="stats">watermark: -\nclosed: 0</pre>
+      <p>late: <span id="late-count">0</span></p>
+      <ul id="results"></ul>
+    </section>
+    <aside class="panel">
+      <label>window size (ms) <input id="sizeMs" type="number" value="2000" /></label>
+      <label>slide (ms) <input id="slideMs" type="number" value="1000" /></label>
+      <label>allowed lateness (ms) <input id="latenessMs" type="number" value="500" /></label>
+      <label>assigner
+        <select id="assigner">
+          <option value="tumbling">tumbling</option>
+          <option value="sliding">sliding</option>
+        </select>
+      </label>
+      <textarea id="events-input" rows="12" placeholder="JSONL events..."></textarea>
+      <div class="actions">
+        <button id="btn-load" type="button">Load fixtures</button>
+        <button id="btn-run" type="button">Run</button>
+        <button id="btn-export" type="button">Export JSON</button>
+      </div>
+    </aside>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
